@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Jeu de dés</title>
+    <style>
+        body {
+            background-image: url('back.jpg'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta correcta a tu imagen */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0; /* Elimina el margen predeterminado del cuerpo */
+            padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* Color de fondo blanco semi-transparente para el cuadro principal */
+            padding: 20px; /* Ajusta el relleno según sea necesario */
+            margin-top: 50px; /* Ajusta la separación superior según sea necesario */
+            border-radius: 10px; /* Ajusta el radio de borde según sea necesario */
+        }
+
+        .dice-small {
+            width: 150px; /* Ajusta el tamaño según tus necesidades */
+            height: auto;
+            border: 2px solid black; /* Agrega un borde negro */
+            margin-bottom: 10px; /* Ajusta la separación entre los dados */
+        }
+        .player-panel {
+        transition: background-color 0.5s ease; /* Agrega transición para el cambio de color de fondo */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        }
+
+        .player-panel.active {
+            background-color: rgba(0, 0, 0, 0.1); /* Color de fondo oscuro para el jugador activo */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h3>Jeu de dés</h3>
+                        <br>
+                        <button class="btn btn-info btn-new"><i class="ion-ios-plus-outline"></i>Nouvelle partiee</button>
+                        <a href="../index.html" class="btn btn-info btn-new"><i class="ion-ios-plus-outline"></i>Retour à la page d'accueil</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="player-0-panel active player-panel">
+                                    <div class="player-name" id="name-0">Player 1</div>
+                                    <div class="player-score" id="score-0">0</div>
+                                    <div class="player-current-box">
+                                        <div class="player-current-label">Actuel</div>
+                                        <div class="player-current-score" id="current-0">0</div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle btn-select-dice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-player="0">
+                                                Nombre de dés: <span class="selected-dice">1</span>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">1</a>
+                                                <a class="dropdown-item" href="#">2</a>
+                                                <a class="dropdown-item" href="#">3</a>
+                                                <a class="dropdown-item" href="#">4</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="player-1-panel player-panel">
+                                    <div class="player-name" id="name-1">Player 2</div>
+                                    <div class="player-score" id="score-1">0</div>
+                                    <div class="player-current-box">
+                                        <div class="player-current-label">Actuel</div>
+                                        <div class="player-current-score" id="current-1">0</div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-secondary dropdown-toggle btn-select-dice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-player="1">
+                                                Nombre de dés: <span class="selected-dice">1</span>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">1</a>
+                                                <a class="dropdown-item" href="#">2</a>
+                                                <a class="dropdown-item" href="#">3</a>
+                                                <a class="dropdown-item" href="#">4</a>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <button class="btn btn-primary btn-roll"><i class="ion-ios-loop"></i>Lancer les dés</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-success btn-hold"><i class="ion-ios-download-outline"></i>Passer</button>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <input type="text" placeholder="Score final" class="form-control final-score">
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-6 text-center">
+                                <img src="dice-5.png" alt="Dice" class="img-fluid dice-small" id="dice-1">
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="dice-5.png" alt="Dice" class="img-fluid dice-small" id="dice-2">
+                                    </div>
+                                    <div class="col-md-12 mt-2">
+                                        <img src="dice-5.png" alt="Dice" class="img-fluid dice-small" id="dice-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>             
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="challenges.js"></script>
+</body>
+
+</html>

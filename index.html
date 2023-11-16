@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Site web Gaming</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="node_modules/ionicons/dist/css/ionicons.min.css">
+
+    <style>
+      .custom-search-input {
+        padding: 2px 10px; /* Ajusta el relleno para cambiar la altura */
+      }
+    </style>
+    
+</head>
+
+<body id="top">
+
+    <header class="header">
+
+        <div class="header-top">
+          <div class="container">
+    
+            <div class="social-wrapper">
+    
+              <p class="social-title">Suivez nous ici :</p>
+    
+              <ul class="social-list">
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-snapchat"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <form class="d-flex">
+              <input class="form-control me-2 custom-search-input" type="search" placeholder="Search" aria-label="Search" style="text-align: center;">
+              <button class="btn btn-outline-success" type="submit" style="color: white;">Search</button>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- NAVBAR -->
+       
+        <div class="header-bottom skewBg" data-header>
+          <div class="container">
+    
+            <a href="#" class="logo">Centralegaming</a>
+    
+            <nav class="navbar" data-navbar>
+              <ul class="navbar-list">
+    
+                <li class="navbar-item">
+                  <a href="#home" class="navbar-link skewBg" data-nav-link>Accueil</a>
+                </li>
+                
+                <li class="navbar-item">
+                  <a href="#jeux" class="navbar-link skewBg" data-nav-link>Jeux disponibles</a>
+                </li>
+
+                <li class="navbar-item">
+                  <a href="#shop" class="navbar-link skewBg" data-nav-link>Achats</a>
+                </li>
+    
+                <li class="navbar-item">
+                  <a href="#footer" class="navbar-link skewBg" data-nav-link>Contact</a>
+                </li>
+              </ul>
+            </nav>
+    
+            <div class="header-actions">
+    
+              <button class="cart-btn" aria-label="cart">
+                <ion-icon name="cart"></ion-icon>
+    
+                <span class="cart-badge">0</span>
+              </button>
+
+            </div>
+    
+          </div>
+        </div>
+    
+    </header>
+
+   
+    
+    <main>
+
+      <!-- SECTION 1 -->
+
+      <section class="section hero" id="home" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        
+
+        <div class="container">
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Bienvenue dans la plus grande ludothèque de France</p>
+
+            <h1 class="h1 hero-title">
+              Jeux <span class="span">MIS À JOUR</span> Testez-vous !
+            </h1>
+
+            <p class="hero-text">
+              Jouez en ligne contre les meilleurs joueurs de France et du monde entier.
+            </p>
+
+            <button class="btn skewBg">Vous voulez en savoir plus ?</button>
+
+          </div>
+
+          <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
+            <img src="./assets/images/hero-banner.png" width="700" height="700" alt="hero banner" class="w-100">
+          </figure>
+
+        
+        </div>
+      </section>
+
+      
+
+      <!-- COLABORATION -->
+      <section class="section brand" aria-label="brand">
+        <div class="container">
+          <p class="hero-subtitle text-center">Une collaboration entre</p>
+        </div>
+
+        <ul class="has-scrollbar d-flex justify-content-center">
+
+          <li class="brand-item">
+            <img src="assets/images/ECM.png" width="200" height="150" loading="lazy" alt="brand logo">
+          </li>
+
+          <li class="brand-item">
+            <img src="./assets/images/AMP.png" width="120" height="100" loading="lazy" alt="brand logo">
+          </li>
+
+          <li class="brand-item">
+            <img src="./assets/images/RTM.png" width="200" height="90" loading="lazy" alt="brand logo">
+          </li>
+        </ul>
+      
+      </section>
+      
+      <!-- DERNIERS JEUX -->
+      <section class="section latest-game" aria-label="latest game" id="jeux">
+        <div class="container">
+
+          <p class="section-subtitle">Derniers jeux</p>
+
+          <h2 class="h2 section-title">
+            Jouez & <span class="span">Gagnez</span>
+          </h2>
+
+          <ul class="has-scrollbar  d-flex justify-content-center" >
+
+            <li class="scrollbar-item">
+              <div class="latest-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                  <!-- <img src="./assets/images/jeuPrincipal.jpeg" width="100" height="100" loading="lazy"
+                    alt="White Walker Daily" class="img-cover"> -->
+                  <img src="assets/images/jeuPrincipal.jpeg" width="200" height="150" loading="lazy" alt="brand logo"  class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">Jeux de hasard</a>
+
+                  <h3 class="h3">
+                    <a class="card-title"> Nom du jeu</a>
+                  </h3>
+
+                  <h3 class="card-price">
+                    <a href="game/index.html" class="card-price"> <span class="span">Jouer</span></a>
+                  </h3>
+
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="latest-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+                  <img src="./assets/images/uncharted.jpg" width="100" height="100" loading="lazy"
+                      class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">Mystère</a>
+
+                  <h3 class="h3">
+                    <a class="card-title"> Uncharted 4 : jeu officiel </a>
+                  </h3>
+
+                  <h3 class="card-price">
+                    <a href="#" class="card-price"> <span class="span">Jouer</span></a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="latest-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                  <img src="./assets/images/fortnite.jpg" width="50" height="50" loading="lazy"
+                    alt="Cyberpunk Daily" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">Action</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Fortnite </a>
+                  </h3>
+
+                  <h3 class="card-price">
+                    <a href="#" class="card-price"> <span class="span">Jouer</span></a>
+                  </h3>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4 -->
+
+      <section class="section shop" id="shop" aria-label="shop">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            <span class="span">Articles qui pourraient vous intéresser</span>
+          </h2>
+
+          <ul class="has-scrollbar  d-flex justify-content-center">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/shop11.jpeg" width="300" height="260" loading="lazy"
+                    alt="Women Black T-Shirt" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">Chaise Gamer</a>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">$75.00</p>
+
+                    <button class="card-btn">
+                      <ion-icon name="basket"></ion-icon>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/shop22.jpg" width="300" height="260" loading="lazy"
+                    alt="Gears 5 Xbox Controller" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">Volant Play Station</a>
+
+
+                  <div class="card-wrapper">
+                    <p class="card-price">$124.99</p>
+
+                    <button class="card-btn">
+                      <ion-icon name="basket"></ion-icon>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/shop33.jpg.avif" width="300" height="260" loading="lazy"
+                    alt="GeForce RTX 2070" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">VR-Box</a>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">$240.99</p>
+
+                    <button class="card-btn">
+                      <ion-icon name="basket"></ion-icon>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/shop4.jpg" width="300" height="260" loading="lazy"
+                    alt="Virtual Reality Smiled" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">XBOX</a>
+
+                  
+
+                  <div class="card-wrapper">
+                    <p class="card-price">$35.00</p>
+
+                    <button class="card-btn">
+                      <ion-icon name="basket"></ion-icon>
+                    </button>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- FOOTER -->
+    <section class="#" id="footer" aria-label="product">
+      <footer id="contact"class="footer">
+      <!-- <footer id="contact"class="footer" style="background-image: url('./assets/images/footer-bg.jpg')"> -->
+
+        <div class="footer-top">
+          <div class="container d-flex justify-content-center">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">Centralegaming</a>
+    
+              <p class="footer-text">
+                Centralegaming, la révolution du jeu.
+              </p>
+    
+              <ul class="contact-list">
+    
+                <li class="contact-item">
+                  <div class="contact-icon">
+                    <ion-icon name="location"></ion-icon>
+                  </div>
+    
+                  <address class="item-text">
+                    Adresse : 38 Rue Frédéric Joliot Curie, 13013 Marseille
+                  </address>
+                </li>
+    
+                <li class="contact-item">
+                  <div class="contact-icon">
+                    <ion-icon name="headset"></ion-icon>
+                  </div>
+    
+                  <a href="#" class="item-text">Assistance technique : +33 749 745 628</a>
+                </li>
+    
+                <li class="contact-item">
+                  <div class="contact-icon">
+                    <ion-icon name="mail-open"></ion-icon>
+                  </div>
+    
+                  <a href="#" class="item-text">Adresse email : centrale.developpementweb2023@centrale-marseille.fr</a>
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+  
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Besoin d'aide?</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Termes & conditions</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Politique de confidentialité</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Politique de remboursement</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Affiliation</a>
+              </li>
+    
+            </ul>
+    
+            <div class="footer-wrapper">
+    
+              <div class="social-wrapper">
+    
+                <p class="footer-list-title">Follow Us</p>
+    
+                <ul class="social-list">
+    
+                  <li>
+                    <a href="#" class="social-link" style="background-color: #3b5998">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="social-link" style="background-color: #55acee">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="social-link" style="background-color: #e1e40f">
+                      <ion-icon name="logo-snapchat"></ion-icon>
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#" class="social-link" style="background-color: #eb1943">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                  </li>
+    
+                </ul>
+    
+              </div>
+    
+              <div class="footer-newsletter">
+    
+                <p class="footer-list-title">Newsletter Sign Up</p>
+    
+                <form action="" class="footer-newsletter">
+                  <input type="email" name="email_address" aria-label="email" placeholder="Enter your email" required
+                    class="email-field">
+    
+                  <button type="submit" class="footer-btn" aria-label="submit">
+                    <ion-icon name="rocket"></ion-icon>
+                  </button>
+                </form>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="container d-flex justify-content-center">
+    
+            <p class="copyright">
+              &copy; 2023 Centralegaming. All Right Reserved by FernandoLalanne</a>
+            </p>
+    
+    
+          </div>
+        </div>
+    
+      </footer>
+    </section>
+   
+
+     <!-- 
+    - #BACK TO TOP
+    -->
+
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+      <ion-icon name="caret-up-circle-outline"></ion-icon>
+    </a>
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+<script src=".assets/js/script.js" defer></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
