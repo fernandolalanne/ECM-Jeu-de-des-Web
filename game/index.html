@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <title>Jeu de dés</title>
+    <title>Centrale dés</title>
     <style>
         body {
             background-image: url('back.jpg'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta correcta a tu imagen */
@@ -59,11 +59,24 @@
             <div class="col-md-6 offset-md-3">
                 <div class="card text-center">
                     <div class="card-header">
-                        <h3>Jeu de dés</h3>
+                        <h3>Centrale dés</h3>
                         <br>
                         <button class="btn btn-info btn-new"><i class="ion-ios-plus-outline"></i>Nouvelle partiee</button>
                         <a href="../index.html" class="btn btn-info btn-new"><i class="ion-ios-plus-outline"></i>Retour à la page d'accueil</a>
                     </div>
+
+                    <div class="card-body">
+                        <div class="rules-container">
+                            <h4 class="rules-title">Règles du Jeu:</h4>
+                            <ul class="rules-list">
+                                <li class="rules-list-item">Chaque joueur lance trois dés à chaque tour.</li>
+                                <li class="rules-list-item">Si au moins un dé affiche un 1 ou un 6, c'est le tour immédiat de l'autre joueur</li>
+                                <li class="rules-list-item">Les points sont cumulés à chaque lancer, sauf si un 1 est obtenu ou si un 6 a été obtenu lors du dernier lancer, auquel cas le tour est terminé.</li>
+                                <li class="rules-list-item">Le premier joueur à atteindre le score final, qui peut être modifié manuellement, remporte la partie.</li>
+                            </ul>
+                        </div>
+                    </div>
+
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
@@ -73,19 +86,6 @@
                                     <div class="player-current-box">
                                         <div class="player-current-label">Actuel</div>
                                         <div class="player-current-score" id="current-0">0</div>
-                                    </div>
-                                    <div class="mt-3">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-secondary dropdown-toggle btn-select-dice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-player="0">
-                                                Nombre de dés: <span class="selected-dice">1</span>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">1</a>
-                                                <a class="dropdown-item" href="#">2</a>
-                                                <a class="dropdown-item" href="#">3</a>
-                                                <a class="dropdown-item" href="#">4</a>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -97,18 +97,6 @@
                                         <div class="player-current-label">Actuel</div>
                                         <div class="player-current-score" id="current-1">0</div>
                                     </div>
-                                    <div class="mt-3">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-secondary dropdown-toggle btn-select-dice" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-player="1">
-                                                Nombre de dés: <span class="selected-dice">1</span>
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">1</a>
-                                                <a class="dropdown-item" href="#">2</a>
-                                                <a class="dropdown-item" href="#">3</a>
-                                                <a class="dropdown-item" href="#">4</a>
-                                            </div>
-                                        </div>
                                 </div>
                             </div>
                         </div>
